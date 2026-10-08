@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FFF0F5] text-slate-800 antialiased selection:bg-pink-300 selection:text-pink-950;
+    font-family: 'Quicksand', 'Fredoka', sans-serif;
+  }
+}
+
+/* Hello Kitty Pure White & Baby Pink Theme System */
+
+/* Theme 1: Hello Kitty Baby Pink & Pure White (Default Light Mode) */
+.theme-hk-babypink {
+  background-color: #fff0f5;
+  color: #2d1522;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(255, 182, 193, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 245, 247, 0.9) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(244, 114, 182, 0.25) 0px, transparent 50%),
+    linear-gradient(to right, rgba(244, 114, 182, 0.08) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(244, 114, 182, 0.08) 2px, transparent 2px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 28px 28px, 28px 28px;
+}
+
+/* Theme 2: Pure White Hello Kitty Dream */
+.theme-hk-whitedream {
+  background-color: #ffffff;
+  color: #2b121e;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(255, 192, 203, 0.35) 0px, transparent 60%),
+    radial-gradient(at 90% 15%, rgba(255, 240, 245, 0.8) 0px, transparent 60%),
+    radial-gradient(at 50% 90%, rgba(244, 114, 182, 0.15) 0px, transparent 60%),
+    linear-gradient(to right, rgba(244, 114, 182, 0.06) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(244, 114, 182, 0.06) 2px, transparent 2px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 24px 24px, 24px 24px;
+}
+
+/* Glass Panels with Pure White Backgrounds */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid #fbcfe8;
+  box-shadow: 0 8px 30px rgba(244, 114, 182, 0.12);
+  color: #2d1522;
+}
+
+.hk-card-pink {
+  background: #ffffff;
+  color: #2d1522;
+  border: 2px solid #f472b6;
+  box-shadow: 4px 4px 0px 0px #f472b6;
+  transition: all 0.15s ease;
+}
+
+.hk-card-pink:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px 0px #ec4899;
+}
+
+.hk-card-white {
+  background: #ffffff;
+  color: #2d1522;
+  border: 2px solid #fbcfe8;
+  box-shadow: 4px 4px 0px 0px #fbcfe8;
+}
+
+/* Hello Kitty UI Buttons (No Black, Pure White & Pink!) */
+.mc-btn-hk-pink {
+  background-color: #f472b6;
+  color: #ffffff;
+  border: 2px solid #db2777;
+  box-shadow: inset -3px -3px 0px 0px #db2777, inset 3px 3px 0px 0px #fbcfe8, 0 4px 0 0 #9d174d;
+  font-family: 'Fredoka', 'Quicksand', sans-serif;
+  font-weight: 700;
+  transition: all 0.08s ease;
+}
+
+.mc-btn-hk-pink:hover {
+  background-color: #ec4899;
+  transform: translateY(-1px);
+}
+
+.mc-btn-hk-pink:active {
+  transform: translateY(2px);
+  box-shadow: inset 3px 3px 0px 0px #db2777, inset -3px -3px 0px 0px #fbcfe8, 0 1px 0 0 #9d174d;
+}
+
+.mc-btn-hk-white {
+  background-color: #ffffff;
+  color: #db2777;
+  border: 2px solid #f472b6;
+  box-shadow: inset -3px -3px 0px 0px #fbcfe8, inset 3px 3px 0px 0px #ffffff, 0 4px 0 0 #f472b6;
+  font-family: 'Fredoka', 'Quicksand', sans-serif;
+  font-weight: 700;
+  transition: all 0.08s ease;
+}
+
+.mc-btn-hk-white:hover {
+  background-color: #fff0f5;
+  color: #be185d;
+  transform: translateY(-1px);
+}
+
+.mc-btn-hk-white:active {
+  transform: translateY(2px);
+  box-shadow: inset 3px 3px 0px 0px #fbcfe8, inset -3px -3px 0px 0px #ffffff, 0 1px 0 0 #f472b6;
+}
+
+.mc-btn-red {
+  background-color: #f43f5e;
+  color: #ffffff;
+  border: 2px solid #be185d;
+  box-shadow: inset -3px -3px 0px 0px #be185d, inset 3px 3px 0px 0px #fecdd3, 0 4px 0 0 #831843;
+  font-family: 'Fredoka', 'Quicksand', sans-serif;
+  font-weight: 700;
+  transition: all 0.08s ease;
+}
+
+.mc-btn-red:hover {
+  background-color: #e11d48;
+  transform: translateY(-1px);
+}
+
+.mc-btn-red:active {
+  transform: translateY(2px);
+  box-shadow: inset 3px 3px 0px 0px #be185d, inset -3px -3px 0px 0px #fecdd3, 0 1px 0 0 #831843;
+}
+
+/* BrainShield Hello Kitty Title Typography */
+.hk-logo-text {
+  font-family: 'Fredoka', 'Quicksand', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 
+    -2px -2px 0 #db2777,  
+     2px -2px 0 #db2777,
+    -2px  2px 0 #db2777,
+     2px  2px 0 #db2777,
+     0px  4px 0 #be185d,
+     0px  8px 0 #831843,
+     0px 10px 14px rgba(244, 114, 182, 0.4);
+}
+
+/* Animations */
+@keyframes pulsePinkHeart {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+.animate-pulse-pink {
+  animation: pulsePinkHeart 1.5s ease-in-out infinite;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 6px;
+  border: 1px solid #fbcfe8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
